@@ -17,5 +17,7 @@ In browser go to:
 
 enter password
 
+Enable default plugins, also enable amazon EC2 plugin.
+
 ....
 
