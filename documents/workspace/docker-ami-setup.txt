@@ -1,0 +1,17 @@
+sudo yum update -y
+sudo yum install -y docker
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+
+logout/login
+
+docker info
+
+
+Optional docker-machine:
+
+curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine && \
+chmod +x /tmp/docker-machine && \
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+
+docker-machine version
