@@ -1,0 +1,35 @@
+#
+# Elastic Beanstalk (EB) Environments!
+#
+
+#
+# Install EB (Elastic Beanstalk) API to local directory under 
+# ec2-user/.local/bin
+#
+
+pip install awsebcli --upgrade --user
+
+# Don't forget to update path in profile:
+PATH=/home/ec2-user/.local/bin:$PATH:...
+
+#
+# What Shell do I have?
+#
+echo $SHELL
+
+#
+# Okay I built my python app, now what?
+# (Flask?) application (application.py)
+#
+
+# Need requirements.txt:
+pip freeze > requirements.txt
+
+# Create a new Application:
+eb init -p python2.7 my-flask-tutorial
+
+# Create a new Env:
+eb create myfirst-flask-env
+
+
+

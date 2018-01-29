@@ -1,0 +1,23 @@
+# Developer Env for AWS Development
+# run docker setup
+#
+
+
+#
+# Hooking up to Amazon EC2 Container Registry:
+#
+# Get docker login command:
+#
+aws ecr get-login --no-include-email --region us-west-2
+
+aws ecr get-login --no-include-email --region us-west-2 > docker-login.bash
+chmod 777 docker-login.bash
+./docker-login.bash
+
+#
+# Configure AWS Services CLI:
+#
+aws configure
+# (Enter IAM user info)
+
+
