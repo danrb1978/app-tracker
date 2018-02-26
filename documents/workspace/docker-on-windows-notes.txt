@@ -1,0 +1,6 @@
+
+
+Creating a VM on windows through docker-machine:
+docker-machine create -d hyperv --hyperv-virtual-switch externSwitch testdriven-dev1
+
+https://docs.docker.com/machine/drivers/hyper-v/
