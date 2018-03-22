@@ -1,0 +1,33 @@
+#
+
+# First needed to add the distribution to /etc/apt/sources.list
+# 
+# 
+# 
+# Add the following line to your /etc/apt/sources.list. According to your distribution, replace 
+#  '<mydist>' with 'artful', 'zesty', 'yakkety', 'xenial', 'trusty', 'stretch', 'jessie', 
+#  or 'wheezy' (older versions of VirtualBox supported different distributions):
+#  deb https://download.virtualbox.org/virtualbox/debian <mydist> contrib
+
+# Added this line:
+# deb https://download.virtualbox.org/virtualbox/debian xenial contrib
+
+
+
+#Install VirtualBox Example
+
+# This will download a key and add it to apt-key keystore:
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+# The website says:
+#  The key fingerprint for oracle_vbox_2016.asc is:
+#   B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF
+#   Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>
+#
+# So we can check the key install with the last 8 characters:
+sudo apt-key fingerprint 2980AECF
+
+# Finally, download, and install:
+sudo apt-get update
+sudo apt-get install virtualbox-5.2 
