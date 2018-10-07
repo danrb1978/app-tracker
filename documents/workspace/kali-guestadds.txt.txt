@@ -1,0 +1,39 @@
+    1  apt-get update
+    2  apt-get upgrade
+    3  apt-get update
+    4  apt-get upgrate
+    5  apt-get upgrade
+    6  restart
+    7  users
+    8  exit
+    9  which tor
+   10  cd /dev
+   11  ls
+   12  ls cdrom
+   13  apt-get install -y linux-headers-$(uname -r)
+   14  cd /media/cdrom
+   15  ls
+   16  ls -al
+   17  sh VBoxLinuxAdditions.run
+   18  uname -a
+   19  more /var/log/vboxadd-install.log 
+   20  which more
+   21  ls /var/log/
+   22  more /var/log/vboxadd-setup.log 
+   23  more /var/log/kern.log
+   24  history
+   25  which tor
+   26  uname uname -r
+   27  uname -r
+   28  sudo apt-get install virtualbox-guest-dkms
+   29  uname -r
+   30  uname
+   31  uname -all
+   32  uname --aall
+   33  uname --all
+   34  reboot
+   35  uname --all
+   36  history
+   37  uname -r
+   38  history
+   39  history > orig-hist.txt
